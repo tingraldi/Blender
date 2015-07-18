@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E68E11B81B5AD03700539179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E11B71B5AD03700539179 /* AppDelegate.swift */; };
+		E68E11BA1B5AD03700539179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E11B91B5AD03700539179 /* ViewController.swift */; };
+		E68E11BD1B5AD03700539179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68E11BB1B5AD03700539179 /* Main.storyboard */; };
+		E68E11BF1B5AD03700539179 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68E11BE1B5AD03700539179 /* Images.xcassets */; };
+		E68E11C21B5AD03700539179 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68E11C01B5AD03700539179 /* LaunchScreen.xib */; };
+		E68E11CE1B5AD03700539179 /* BlenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E11CD1B5AD03700539179 /* BlenderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E68E11C81B5AD03700539179 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E68E11AA1B5AD03700539179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E68E11B11B5AD03700539179;
+			remoteInfo = Blender;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E68E11B21B5AD03700539179 /* Blender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blender.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68E11B61B5AD03700539179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68E11B71B5AD03700539179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E68E11B91B5AD03700539179 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E68E11BC1B5AD03700539179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E68E11BE1B5AD03700539179 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E68E11C11B5AD03700539179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E68E11C71B5AD03700539179 /* BlenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E68E11CC1B5AD03700539179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E68E11CD1B5AD03700539179 /* BlenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlenderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E68E11AF1B5AD03700539179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68E11C41B5AD03700539179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E68E11A91B5AD03700539179 = {
+			isa = PBXGroup;
+			children = (
+				E68E11B41B5AD03700539179 /* Blender */,
+				E68E11CA1B5AD03700539179 /* BlenderTests */,
+				E68E11B31B5AD03700539179 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E68E11B31B5AD03700539179 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E68E11B21B5AD03700539179 /* Blender.app */,
+				E68E11C71B5AD03700539179 /* BlenderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E68E11B41B5AD03700539179 /* Blender */ = {
+			isa = PBXGroup;
+			children = (
+				E68E11B71B5AD03700539179 /* AppDelegate.swift */,
+				E68E11B91B5AD03700539179 /* ViewController.swift */,
+				E68E11BB1B5AD03700539179 /* Main.storyboard */,
+				E68E11BE1B5AD03700539179 /* Images.xcassets */,
+				E68E11C01B5AD03700539179 /* LaunchScreen.xib */,
+				E68E11B51B5AD03700539179 /* Supporting Files */,
+			);
+			path = Blender;
+			sourceTree = "<group>";
+		};
+		E68E11B51B5AD03700539179 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E68E11B61B5AD03700539179 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E68E11CA1B5AD03700539179 /* BlenderTests */ = {
+			isa = PBXGroup;
+			children = (
+				E68E11CD1B5AD03700539179 /* BlenderTests.swift */,
+				E68E11CB1B5AD03700539179 /* Supporting Files */,
+			);
+			path = BlenderTests;
+			sourceTree = "<group>";
+		};
+		E68E11CB1B5AD03700539179 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E68E11CC1B5AD03700539179 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E68E11B11B5AD03700539179 /* Blender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E68E11D11B5AD03700539179 /* Build configuration list for PBXNativeTarget "Blender" */;
+			buildPhases = (
+				E68E11AE1B5AD03700539179 /* Sources */,
+				E68E11AF1B5AD03700539179 /* Frameworks */,
+				E68E11B01B5AD03700539179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blender;
+			productName = Blender;
+			productReference = E68E11B21B5AD03700539179 /* Blender.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E68E11C61B5AD03700539179 /* BlenderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E68E11D41B5AD03700539179 /* Build configuration list for PBXNativeTarget "BlenderTests" */;
+			buildPhases = (
+				E68E11C31B5AD03700539179 /* Sources */,
+				E68E11C41B5AD03700539179 /* Frameworks */,
+				E68E11C51B5AD03700539179 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E68E11C91B5AD03700539179 /* PBXTargetDependency */,
+			);
+			name = BlenderTests;
+			productName = BlenderTests;
+			productReference = E68E11C71B5AD03700539179 /* BlenderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E68E11AA1B5AD03700539179 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Majesty Software";
+				TargetAttributes = {
+					E68E11B11B5AD03700539179 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E68E11C61B5AD03700539179 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E68E11B11B5AD03700539179;
+					};
+				};
+			};
+			buildConfigurationList = E68E11AD1B5AD03700539179 /* Build configuration list for PBXProject "Blender" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E68E11A91B5AD03700539179;
+			productRefGroup = E68E11B31B5AD03700539179 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E68E11B11B5AD03700539179 /* Blender */,
+				E68E11C61B5AD03700539179 /* BlenderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E68E11B01B5AD03700539179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68E11BD1B5AD03700539179 /* Main.storyboard in Resources */,
+				E68E11C21B5AD03700539179 /* LaunchScreen.xib in Resources */,
+				E68E11BF1B5AD03700539179 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68E11C51B5AD03700539179 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E68E11AE1B5AD03700539179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68E11BA1B5AD03700539179 /* ViewController.swift in Sources */,
+				E68E11B81B5AD03700539179 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E68E11C31B5AD03700539179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E68E11CE1B5AD03700539179 /* BlenderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E68E11C91B5AD03700539179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E68E11B11B5AD03700539179 /* Blender */;
+			targetProxy = E68E11C81B5AD03700539179 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E68E11BB1B5AD03700539179 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E68E11BC1B5AD03700539179 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E68E11C01B5AD03700539179 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E68E11C11B5AD03700539179 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E68E11CF1B5AD03700539179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E68E11D01B5AD03700539179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E68E11D21B5AD03700539179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Blender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E68E11D31B5AD03700539179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Blender/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E68E11D51B5AD03700539179 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlenderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blender.app/Blender";
+			};
+			name = Debug;
+		};
+		E68E11D61B5AD03700539179 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlenderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blender.app/Blender";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E68E11AD1B5AD03700539179 /* Build configuration list for PBXProject "Blender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68E11CF1B5AD03700539179 /* Debug */,
+				E68E11D01B5AD03700539179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E68E11D11B5AD03700539179 /* Build configuration list for PBXNativeTarget "Blender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68E11D21B5AD03700539179 /* Debug */,
+				E68E11D31B5AD03700539179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E68E11D41B5AD03700539179 /* Build configuration list for PBXNativeTarget "BlenderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E68E11D51B5AD03700539179 /* Debug */,
+				E68E11D61B5AD03700539179 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E68E11AA1B5AD03700539179 /* Project object */;
+}
