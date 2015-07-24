@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Blender" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,106 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxU-zl-Pos">
+                                <rect key="frame" x="39" y="28" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="IaB-LF-u4c"/>
+                                    <constraint firstAttribute="height" constant="44" id="My7-gc-1BE"/>
+                                </constraints>
+                                <state key="normal" title="Horn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emitTone:" destination="vXZ-lx-hvc" eventType="touchDown" id="efF-QB-gzx"/>
+                                    <action selector="endTone:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="HW5-ki-Cr9"/>
+                                    <action selector="endTone:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="guf-C0-wgh"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-255" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="CdK-gX-aUb" userLabel="Left Motor Slider">
+                                <rect key="frame" x="14" y="285" width="200" height="31"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="EmV-tm-ZlE"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sendLeftMotorCommand:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Ata-gR-DjK"/>
+                                    <action selector="stopLeftMotor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f25-Rh-hwM"/>
+                                    <action selector="stopLeftMotor:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="m6d-2K-g1y"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-255" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="EjP-YV-Xu0" userLabel="Right Motor Slider">
+                                <rect key="frame" x="386" y="285" width="200" height="31"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="paT-G3-qcR"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sendRightMotorCommand:" destination="vXZ-lx-hvc" eventType="valueChanged" id="e1g-wb-rhB"/>
+                                    <action selector="stopRightMotor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="M7y-Jq-5VS"/>
+                                    <action selector="stopRightMotor:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="hC2-kC-Lsy"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co3-zL-rwV">
+                                <rect key="frame" x="517" y="28" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="BMb-WH-N0o"/>
+                                    <constraint firstAttribute="height" constant="44" id="Bcu-Ch-xmY"/>
+                                </constraints>
+                                <state key="normal" title="Light">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="lightOff:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="OSL-vJ-lsk"/>
+                                    <action selector="lightOff:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VFR-Ac-dyq"/>
+                                    <action selector="lightOn:" destination="vXZ-lx-hvc" eventType="touchDown" id="mOu-DX-hB6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCN-QW-QOI">
+                                <rect key="frame" x="260" y="536" width="53" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="F9G-PP-JSB"/>
+                                    <constraint firstAttribute="width" constant="53" id="cxw-3r-Z69"/>
+                                </constraints>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bjo-9l-qHF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="co3-zL-rwV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="0mh-YZ-iA0"/>
+                            <constraint firstItem="co3-zL-rwV" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" constant="-23" id="EoD-TZ-2BA"/>
+                            <constraint firstItem="CdK-gX-aUb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="LtJ-CW-rHZ"/>
+                            <constraint firstItem="eCN-QW-QOI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="23" id="NAP-BE-1e0"/>
+                            <constraint firstItem="XxU-zl-Pos" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="23" id="Uns-co-pRF"/>
+                            <constraint firstItem="EjP-YV-Xu0" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="V36-M6-inM"/>
+                            <constraint firstAttribute="centerX" secondItem="eCN-QW-QOI" secondAttribute="centerX" constant="13.5" id="Wtf-Q1-EuO"/>
+                            <constraint firstAttribute="centerY" secondItem="EjP-YV-Xu0" secondAttribute="centerY" id="cT1-9b-DJc"/>
+                            <constraint firstAttribute="centerY" secondItem="CdK-gX-aUb" secondAttribute="centerY" id="fSS-lY-64G"/>
+                            <constraint firstItem="XxU-zl-Pos" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="rA6-fT-uy4"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="eCN-QW-QOI" secondAttribute="bottom" constant="20" id="uTt-h3-ycK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="NAP-BE-1e0"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="hornButton" destination="XxU-zl-Pos" id="xHG-uY-0Q2"/>
+                        <outlet property="leftMotorSlider" destination="CdK-gX-aUb" id="vy6-Uj-5c9"/>
+                        <outlet property="lightButton" destination="co3-zL-rwV" id="XJp-25-oBh"/>
+                        <outlet property="resetButton" destination="eCN-QW-QOI" id="iUj-RP-nXS"/>
+                        <outlet property="rightMotorSlider" destination="EjP-YV-Xu0" id="fXi-QD-ab1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="62" y="152"/>
         </scene>
     </scenes>
 </document>
