@@ -15,7 +15,7 @@ from the Tumbler. Pretend that the board shown in the sketch is a RedBearLab Ble
 
 The control circuit is very simple--a single L293D H-bridge chip that is wired to a RedBearLab Blend board. The 
 motor power is supplied by the battery pack on the Tumbler. The board power is supplied by a 9V battery. You can
-power the board over a USB, but be careful when exercising the motor controls are you are likely to break something.
+power the board over a USB, but be careful when exercising the motor controls or you are likely to break something.
 
 There's an LED and a piezo thrown in to the mix for fun and to show how various control messages can be sent. The 
 iOS demo project features controls for the motors, the LED, and the piezo. The OS X demo project just controls
