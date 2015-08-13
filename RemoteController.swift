@@ -6,23 +6,38 @@
 //  Copyright (c) 2015 Majesty Software. All rights reserved.
 //
 
-import UIKit
 import CoreBluetooth
 
 
-let RedBearDeviceServiceUUID = CBUUID(string: "713D0000-503E-4C75-BA94-3148F18D941E")
-let RedBearTransmitCharacteristicUUID = CBUUID(string: "713D0002-503E-4C75-BA94-3148F18D941E")
-let RedBearReceiveCharacteristicUUID = CBUUID(string: "713D0003-503E-4C75-BA94-3148F18D941E")
+let DummyUUID = CBUUID(string: "00000000-0000-0000-0000-000000000000")
+
 
 protocol RemoteControllerDelegate : NSObjectProtocol {
     func remoteController(remoteController: RemoteController, didReceivePacket packet: Packet)
     func remoteControllerIsInitialized(remoteController: RemoteController)
 }
 
+
 class RemoteController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     private var peripheral: CBPeripheral?
     private var centralManager: CBCentralManager!
     private var characteristics = [CBUUID:CBCharacteristic]()
+    var usesExplicitServiceUUIDs = true
+
+    var deviceServiceUUID: CBUUID {
+        return DummyUUID
+    }
+    var deviceServiceUUIDs: [CBUUID]? {
+        var UUIDs: [CBUUID]? = usesExplicitServiceUUIDs ? [deviceServiceUUID] : nil
+        return UUIDs
+    }
+    var receiveCharacteristicUUID: CBUUID { // receive from perspective of peripheral
+        return DummyUUID
+    }
+    var transmitCharacteristicUUID: CBUUID { // transmit from perspective of peripheral
+        return DummyUUID
+    }
+
     var delegate: RemoteControllerDelegate?
 
     func initialize() {
@@ -33,7 +48,7 @@ class RemoteController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
     func centralManagerDidUpdateState(central: CBCentralManager) {
         if (central.state == .PoweredOn && peripheral == nil) {
             println("Starting scan for peripherals")
-            centralManager.scanForPeripheralsWithServices([RedBearDeviceServiceUUID], options: nil)
+            centralManager.scanForPeripheralsWithServices(self.deviceServiceUUIDs, options: nil)
         }
     }
 
@@ -47,7 +62,7 @@ class RemoteController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
 
     func centralManager(central: CBCentralManager!, didConnectPeripheral peripheral: CBPeripheral!) {
         println("Connected to \(peripheral)")
-        peripheral.discoverServices([RedBearDeviceServiceUUID]);
+        peripheral.discoverServices(self.deviceServiceUUIDs);
     }
 
     func centralManager(central: CBCentralManager!, didDisconnectPeripheral peripheral: CBPeripheral!, error: NSError!) {
@@ -60,7 +75,7 @@ class RemoteController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
     func peripheral(peripheral: CBPeripheral!, didDiscoverServices error: NSError!) {
         for service: CBService in peripheral.services as! [CBService] {
             println("Discovered service \(service)")
-            peripheral.discoverCharacteristics([RedBearTransmitCharacteristicUUID, RedBearReceiveCharacteristicUUID], forService: service)
+            peripheral.discoverCharacteristics([self.transmitCharacteristicUUID, self.receiveCharacteristicUUID], forService: service)
         }
         if let actualError = error {
             println(actualError.localizedDescription)
@@ -73,7 +88,7 @@ class RemoteController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
             characteristics[characteristic.UUID] = characteristic
         }
 
-        if let transmitCharacteristic = characteristics[RedBearTransmitCharacteristicUUID] {
+        if let transmitCharacteristic = characteristics[self.transmitCharacteristicUUID] {
             self.peripheral?.setNotifyValue(true, forCharacteristic: transmitCharacteristic)
             self.delegate?.remoteControllerIsInitialized(self)
         }
@@ -85,7 +100,7 @@ class RemoteController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
 
     func peripheral(peripheral: CBPeripheral!, didUpdateValueForCharacteristic characteristic: CBCharacteristic!, error: NSError!) {
         if error == nil {
-            let packet = Packet(data: characteristic.value)
+            let packet = Packet(data: characteristic.data)
             self.delegate?.remoteController(self, didReceivePacket: packet)
         } else {
             println(error)
@@ -93,12 +108,12 @@ class RemoteController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
     }
 
     func read() {
-        self.peripheral?.readValueForCharacteristic(self.characteristics[RedBearTransmitCharacteristicUUID])
+        self.peripheral?.readValueForCharacteristic(self.characteristics[self.transmitCharacteristicUUID])
     }
 
     func write(#data: NSData) {
         if (peripheral?.state == .Connected) {
-            self.peripheral?.writeValue(data, forCharacteristic: self.characteristics[RedBearReceiveCharacteristicUUID], type: .WithoutResponse)
+            self.peripheral?.writeValue(data, forCharacteristic: self.characteristics[self.receiveCharacteristicUUID], type: .WithoutResponse)
         } else {
             println("Refusing to write to a disconnected peripheral")
         }

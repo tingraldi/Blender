@@ -12,20 +12,28 @@ struct Packet : Printable {
     let command: UTF8Char
     let values: [UInt8]?
 
-    init(command stringCommand: String, values someValues: [UInt8]? = nil) {
-        let char = UTF8Char((stringCommand as NSString).characterAtIndex(0))
-        command = char
-        values = someValues
+    init(command: UTF8Char, values: [UInt8]? = nil) {
+        self.command = command
+        self.values = values
+    }
+
+    init(command stringCommand: String, values: [UInt8]? = nil) {
+        let command = UTF8Char((stringCommand as NSString).characterAtIndex(0))
+        self.init(command: command, values: values)
     }
 
     init(data: NSData) {
-        var tmpCommand = UTF8Char(0)
-        data.getBytes(&tmpCommand, length: 1)
-        command = tmpCommand
+        var command = UTF8Char(0)
+        data.getBytes(&command, length: 1)
 
-        var tmpValues = [UInt8](count: data.length - 1, repeatedValue: 0)
-        data.getBytes(&tmpValues, range: NSMakeRange(1, tmpValues.count))
-        values = tmpValues
+        var values = [UInt8](count: data.length - 1, repeatedValue: 0)
+        data.getBytes(&values, range: NSMakeRange(1, values.count))
+
+        self.init(command: command, values: values)
+    }
+
+    var commandString: Character {
+        return Character(UnicodeScalar(command))
     }
 
     var size: Int {
@@ -45,6 +53,6 @@ struct Packet : Printable {
     }
 
     var description: String {
-        return "\(Character(UnicodeScalar(command))): \(values)"
+        return "\(commandString): \(values)"
     }
 }

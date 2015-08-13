@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E67050011B7CD46300AED899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050001B7CD46300AED899 /* AppDelegate.swift */; };
+		E67050051B7CD46300AED899 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67050041B7CD46300AED899 /* Images.xcassets */; };
+		E67050141B7CD46300AED899 /* BlenderXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050131B7CD46300AED899 /* BlenderXTests.swift */; };
+		E670501C1B7CD4B200AED899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670501B1B7CD4B200AED899 /* ViewController.swift */; };
+		E670501E1B7CD4C800AED899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E670501D1B7CD4C800AED899 /* Main.storyboard */; };
+		E67050201B7CD50E00AED899 /* RemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E11D71B5AD21900539179 /* RemoteController.swift */; };
+		E67050211B7CD51100AED899 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E161D1B5D173A00208E65 /* Packet.swift */; };
+		E67050231B7CD5E800AED899 /* CBCharacteristic+BlenderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050221B7CD5E800AED899 /* CBCharacteristic+BlenderX.swift */; };
+		E67050251B7CD66600AED899 /* CBCharacteristic+Blender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050241B7CD66600AED899 /* CBCharacteristic+Blender.swift */; };
+		E670502A1B7CDF6500AED899 /* RedBearRemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050291B7CDF6500AED899 /* RedBearRemoteController.swift */; };
+		E670502B1B7CDF6500AED899 /* RedBearRemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050291B7CDF6500AED899 /* RedBearRemoteController.swift */; };
+		E670502F1B7CED4900AED899 /* ViewController+Blender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670502E1B7CED4900AED899 /* ViewController+Blender.swift */; };
+		E67050311B7CF13D00AED899 /* ViewController+Blender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670502E1B7CED4900AED899 /* ViewController+Blender.swift */; };
 		E68E11B81B5AD03700539179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E11B71B5AD03700539179 /* AppDelegate.swift */; };
 		E68E11BA1B5AD03700539179 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E11B91B5AD03700539179 /* ViewController.swift */; };
 		E68E11BD1B5AD03700539179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68E11BB1B5AD03700539179 /* Main.storyboard */; };
@@ -18,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		E670500E1B7CD46300AED899 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E68E11AA1B5AD03700539179 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6704FFB1B7CD46300AED899;
+			remoteInfo = BlenderX;
+		};
 		E68E11C81B5AD03700539179 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E68E11AA1B5AD03700539179 /* Project object */;
@@ -28,6 +48,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E6704FFC1B7CD46300AED899 /* BlenderX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlenderX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6704FFF1B7CD46300AED899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67050001B7CD46300AED899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E67050041B7CD46300AED899 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E670500D1B7CD46300AED899 /* BlenderXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlenderXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E67050121B7CD46300AED899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E67050131B7CD46300AED899 /* BlenderXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlenderXTests.swift; sourceTree = "<group>"; };
+		E670501B1B7CD4B200AED899 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E670501D1B7CD4C800AED899 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E67050221B7CD5E800AED899 /* CBCharacteristic+BlenderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBCharacteristic+BlenderX.swift"; sourceTree = "<group>"; };
+		E67050241B7CD66600AED899 /* CBCharacteristic+Blender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBCharacteristic+Blender.swift"; sourceTree = "<group>"; };
+		E67050291B7CDF6500AED899 /* RedBearRemoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedBearRemoteController.swift; sourceTree = "<group>"; };
+		E670502E1B7CED4900AED899 /* ViewController+Blender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Blender.swift"; sourceTree = "<group>"; };
 		E68E11B21B5AD03700539179 /* Blender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68E11B61B5AD03700539179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E68E11B71B5AD03700539179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,11 +72,24 @@
 		E68E11CC1B5AD03700539179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E68E11CD1B5AD03700539179 /* BlenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlenderTests.swift; sourceTree = "<group>"; };
 		E68E11D71B5AD21900539179 /* RemoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteController.swift; sourceTree = "<group>"; };
-		E69E161C1B5C724A00208E65 /* Blender.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Blender.playground; sourceTree = "<group>"; };
 		E69E161D1B5D173A00208E65 /* Packet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E6704FF91B7CD46300AED899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E670500A1B7CD46300AED899 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E68E11AF1B5AD03700539179 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,11 +107,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6704FFD1B7CD46300AED899 /* BlenderX */ = {
+			isa = PBXGroup;
+			children = (
+				E67050001B7CD46300AED899 /* AppDelegate.swift */,
+				E670501B1B7CD4B200AED899 /* ViewController.swift */,
+				E67050221B7CD5E800AED899 /* CBCharacteristic+BlenderX.swift */,
+				E670501D1B7CD4C800AED899 /* Main.storyboard */,
+				E67050041B7CD46300AED899 /* Images.xcassets */,
+				E6704FFE1B7CD46300AED899 /* Supporting Files */,
+			);
+			path = BlenderX;
+			sourceTree = "<group>";
+		};
+		E6704FFE1B7CD46300AED899 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6704FFF1B7CD46300AED899 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E67050101B7CD46300AED899 /* BlenderXTests */ = {
+			isa = PBXGroup;
+			children = (
+				E67050131B7CD46300AED899 /* BlenderXTests.swift */,
+				E67050111B7CD46300AED899 /* Supporting Files */,
+			);
+			path = BlenderXTests;
+			sourceTree = "<group>";
+		};
+		E67050111B7CD46300AED899 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E67050121B7CD46300AED899 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E670501F1B7CD4EB00AED899 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E68E11D71B5AD21900539179 /* RemoteController.swift */,
+				E67050291B7CDF6500AED899 /* RedBearRemoteController.swift */,
+				E69E161D1B5D173A00208E65 /* Packet.swift */,
+				E670502E1B7CED4900AED899 /* ViewController+Blender.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
 		E68E11A91B5AD03700539179 = {
 			isa = PBXGroup;
 			children = (
+				E670501F1B7CD4EB00AED899 /* Shared */,
 				E68E11B41B5AD03700539179 /* Blender */,
 				E68E11CA1B5AD03700539179 /* BlenderTests */,
+				E6704FFD1B7CD46300AED899 /* BlenderX */,
+				E67050101B7CD46300AED899 /* BlenderXTests */,
 				E68E11B31B5AD03700539179 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +173,8 @@
 			children = (
 				E68E11B21B5AD03700539179 /* Blender.app */,
 				E68E11C71B5AD03700539179 /* BlenderTests.xctest */,
+				E6704FFC1B7CD46300AED899 /* BlenderX.app */,
+				E670500D1B7CD46300AED899 /* BlenderXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,10 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				E68E11B71B5AD03700539179 /* AppDelegate.swift */,
-				E68E11D71B5AD21900539179 /* RemoteController.swift */,
 				E68E11B91B5AD03700539179 /* ViewController.swift */,
-				E69E161D1B5D173A00208E65 /* Packet.swift */,
-				E69E161C1B5C724A00208E65 /* Blender.playground */,
+				E67050241B7CD66600AED899 /* CBCharacteristic+Blender.swift */,
 				E68E11BB1B5AD03700539179 /* Main.storyboard */,
 				E68E11BE1B5AD03700539179 /* Images.xcassets */,
 				E68E11C01B5AD03700539179 /* LaunchScreen.xib */,
@@ -123,6 +221,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E6704FFB1B7CD46300AED899 /* BlenderX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E67050191B7CD46300AED899 /* Build configuration list for PBXNativeTarget "BlenderX" */;
+			buildPhases = (
+				E6704FF81B7CD46300AED899 /* Sources */,
+				E6704FF91B7CD46300AED899 /* Frameworks */,
+				E6704FFA1B7CD46300AED899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlenderX;
+			productName = BlenderX;
+			productReference = E6704FFC1B7CD46300AED899 /* BlenderX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E670500C1B7CD46300AED899 /* BlenderXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E670501A1B7CD46300AED899 /* Build configuration list for PBXNativeTarget "BlenderXTests" */;
+			buildPhases = (
+				E67050091B7CD46300AED899 /* Sources */,
+				E670500A1B7CD46300AED899 /* Frameworks */,
+				E670500B1B7CD46300AED899 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E670500F1B7CD46300AED899 /* PBXTargetDependency */,
+			);
+			name = BlenderXTests;
+			productName = BlenderXTests;
+			productReference = E670500D1B7CD46300AED899 /* BlenderXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E68E11B11B5AD03700539179 /* Blender */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E68E11D11B5AD03700539179 /* Build configuration list for PBXNativeTarget "Blender" */;
@@ -164,9 +297,17 @@
 		E68E11AA1B5AD03700539179 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "Majesty Software";
 				TargetAttributes = {
+					E6704FFB1B7CD46300AED899 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E670500C1B7CD46300AED899 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E6704FFB1B7CD46300AED899;
+					};
 					E68E11B11B5AD03700539179 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = DSP92R77D9;
@@ -192,11 +333,29 @@
 			targets = (
 				E68E11B11B5AD03700539179 /* Blender */,
 				E68E11C61B5AD03700539179 /* BlenderTests */,
+				E6704FFB1B7CD46300AED899 /* BlenderX */,
+				E670500C1B7CD46300AED899 /* BlenderXTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E6704FFA1B7CD46300AED899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67050051B7CD46300AED899 /* Images.xcassets in Resources */,
+				E670501E1B7CD4C800AED899 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E670500B1B7CD46300AED899 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E68E11B01B5AD03700539179 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -217,12 +376,37 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E6704FF81B7CD46300AED899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E670501C1B7CD4B200AED899 /* ViewController.swift in Sources */,
+				E67050011B7CD46300AED899 /* AppDelegate.swift in Sources */,
+				E67050311B7CF13D00AED899 /* ViewController+Blender.swift in Sources */,
+				E67050231B7CD5E800AED899 /* CBCharacteristic+BlenderX.swift in Sources */,
+				E670502B1B7CDF6500AED899 /* RedBearRemoteController.swift in Sources */,
+				E67050201B7CD50E00AED899 /* RemoteController.swift in Sources */,
+				E67050211B7CD51100AED899 /* Packet.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67050091B7CD46300AED899 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E67050141B7CD46300AED899 /* BlenderXTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E68E11AE1B5AD03700539179 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E68E11BA1B5AD03700539179 /* ViewController.swift in Sources */,
 				E68E11B81B5AD03700539179 /* AppDelegate.swift in Sources */,
+				E67050251B7CD66600AED899 /* CBCharacteristic+Blender.swift in Sources */,
+				E670502A1B7CDF6500AED899 /* RedBearRemoteController.swift in Sources */,
+				E670502F1B7CED4900AED899 /* ViewController+Blender.swift in Sources */,
 				E68E11D81B5AD21900539179 /* RemoteController.swift in Sources */,
 				E69E161E1B5D173A00208E65 /* Packet.swift in Sources */,
 			);
@@ -239,6 +423,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		E670500F1B7CD46300AED899 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6704FFB1B7CD46300AED899 /* BlenderX */;
+			targetProxy = E670500E1B7CD46300AED899 /* PBXContainerItemProxy */;
+		};
 		E68E11C91B5AD03700539179 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E68E11B11B5AD03700539179 /* Blender */;
@@ -266,6 +455,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E67050151B7CD46300AED899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlenderX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E67050161B7CD46300AED899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = BlenderX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E67050171B7CD46300AED899 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlenderXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlenderX.app/Contents/MacOS/BlenderX";
+			};
+			name = Debug;
+		};
+		E67050181B7CD46300AED899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlenderXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlenderX.app/Contents/MacOS/BlenderX";
+			};
+			name = Release;
+		};
 		E68E11CF1B5AD03700539179 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -408,6 +671,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E67050191B7CD46300AED899 /* Build configuration list for PBXNativeTarget "BlenderX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67050151B7CD46300AED899 /* Debug */,
+				E67050161B7CD46300AED899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E670501A1B7CD46300AED899 /* Build configuration list for PBXNativeTarget "BlenderXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E67050171B7CD46300AED899 /* Debug */,
+				E67050181B7CD46300AED899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E68E11AD1B5AD03700539179 /* Build configuration list for PBXProject "Blender" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

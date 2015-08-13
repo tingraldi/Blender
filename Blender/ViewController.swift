@@ -10,30 +10,18 @@ import UIKit
 
 let PI: CGFloat = 4.0 * atan(1.0)
 
-class ViewController: UIViewController, RemoteControllerDelegate {
+class ViewController: UIViewController {
     var remoteController: RemoteController!
-    @IBOutlet weak var leftMotorSlider: UISlider!
-    @IBOutlet weak var rightMotorSlider: UISlider!
     @IBOutlet weak var hornButton: UIButton!
     @IBOutlet weak var lightButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var leftMotorSlider: UISlider!
+    @IBOutlet weak var rightMotorSlider: UISlider!
+
     var leftSliderValue: Float = 0
     var rightSliderValue: Float = 0
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        initializeRemoteController()
-        configureAppearance()
-    }
-
-    func initializeRemoteController() {
-        remoteController = RemoteController()
-        remoteController.delegate = self
-        remoteController.initialize()
-    }
-
-    func configureAppearance() {
+    func prepareForUse() {
         leftMotorSlider.layer.setAffineTransform(CGAffineTransformMakeRotation(PI * -0.5))
         rightMotorSlider.layer.setAffineTransform(CGAffineTransformMakeRotation(PI * -0.5))
         for button in [hornButton, lightButton, resetButton] {
@@ -41,14 +29,6 @@ class ViewController: UIViewController, RemoteControllerDelegate {
             button.layer.borderWidth = 1.0
             button.layer.cornerRadius = 5.0
         }
-    }
-
-    func remoteControllerIsInitialized(remoteController: RemoteController) {
-        println("Remote controller is initialized")
-    }
-
-    func remoteController(remoteController: RemoteController, didReceivePacket packet: Packet) {
-        println("Received echo packet for command \(packet.command)")
     }
 
     @IBAction func emitTone(sender: AnyObject) {
@@ -93,10 +73,6 @@ class ViewController: UIViewController, RemoteControllerDelegate {
     @IBAction func stopRightMotor(sender: AnyObject) {
         remoteController.write(packet: Packet(command: "R", values: [0, 0]))
         rightMotorSlider.value = 0
-    }
-
-    @IBAction func reset(sender: AnyObject) {
-        initializeRemoteController()
     }
 }
 
