@@ -6,7 +6,7 @@ independently. It was purchased at a thrift store and was a great candidate for 
 
 ![the actual toy](https://raw.githubusercontent.com/tingraldi/Blender/master/Hacked%20Tumbler.jpg "Hacked Tumbler")
 
-See it in action [here](https://youtu.be/yEdCtl_qRts)
+See it in action [here](https://youtu.be/vqGI7RXqzFA)
 
 Here's a sketch of the circuit, not including the wires that connect the H-bridge to the motors or the power coming 
 from the Tumbler. Pretend that the board shown in the sketch is a RedBearLab Blend instead of a Leonardo.
