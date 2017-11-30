@@ -9,7 +9,7 @@
 import CoreBluetooth
 
 extension CBCharacteristic {
-    var data: NSData! {
-        return self.value
+    var data: NSData {
+        return self.value! as NSData
     }
 }

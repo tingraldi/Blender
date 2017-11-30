@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Packet : Printable {
+struct Packet {
     let command: UTF8Char
     let values: [UInt8]?
 
@@ -18,7 +18,7 @@ struct Packet : Printable {
     }
 
     init(command stringCommand: String, values: [UInt8]? = nil) {
-        let command = UTF8Char((stringCommand as NSString).characterAtIndex(0))
+        let command = UTF8Char((stringCommand as NSString).character(at: 0))
         self.init(command: command, values: values)
     }
 
@@ -26,7 +26,7 @@ struct Packet : Printable {
         var command = UTF8Char(0)
         data.getBytes(&command, length: 1)
 
-        var values = [UInt8](count: data.length - 1, repeatedValue: 0)
+        var values = [UInt8](repeating: 0, count: data.length - 1)
         data.getBytes(&values, range: NSMakeRange(1, values.count))
 
         self.init(command: command, values: values)
@@ -37,22 +37,22 @@ struct Packet : Printable {
     }
 
     var size: Int {
-        var size = sizeof(UTF8Char)
+        var size = MemoryLayout<UTF8Char>.size
         if values != nil {
-            size += sizeof(UInt8) * values!.count
+            size += MemoryLayout.size(ofValue: UInt8()) * values!.count
         }
         return size
     }
 
     var data: NSData {
-        var data = NSMutableData(bytes: [command], length: sizeof(UTF8Char))
+        let data = NSMutableData(bytes: [command], length: MemoryLayout.size(ofValue: UTF8Char()))
         if (values != nil) {
-            data.appendBytes(values!, length: values!.count * sizeof(UInt8))
+            data.append(values!, length: values!.count * MemoryLayout.size(ofValue: UInt8()))
         }
         return data
     }
 
     var description: String {
-        return "\(commandString): \(values)"
+        return "\(commandString): \(String(describing: values))"
     }
 }

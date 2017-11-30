@@ -16,7 +16,7 @@ class ViewController: NSViewController {
     @IBOutlet weak var lightButton: NSButton!
 
     func prepareForUse() {
-        remoteController.usesExplicitServiceUUIDs = false // on OS X, explicit scan for services seems to be unreliable
+        remoteController.usesExplicitServiceUUIDs = true
     }
     
     @IBAction func toggleTone(sender: AnyObject) {

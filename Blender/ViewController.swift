@@ -22,12 +22,12 @@ class ViewController: UIViewController {
     var rightSliderValue: Float = 0
 
     func prepareForUse() {
-        leftMotorSlider.layer.setAffineTransform(CGAffineTransformMakeRotation(PI * -0.5))
-        rightMotorSlider.layer.setAffineTransform(CGAffineTransformMakeRotation(PI * -0.5))
+        leftMotorSlider.layer.setAffineTransform(CGAffineTransform(rotationAngle: PI * -0.5))
+        rightMotorSlider.layer.setAffineTransform(CGAffineTransform(rotationAngle: PI * -0.5))
         for button in [hornButton, lightButton, resetButton] {
-            button.layer.borderColor = UIColor.blackColor().CGColor
-            button.layer.borderWidth = 1.0
-            button.layer.cornerRadius = 5.0
+            button?.layer.borderColor = UIColor.black.cgColor
+            button?.layer.borderWidth = 1.0
+            button?.layer.cornerRadius = 5.0
         }
     }
 

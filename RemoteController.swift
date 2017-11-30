@@ -28,7 +28,7 @@ class RemoteController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
         return DummyUUID
     }
     var deviceServiceUUIDs: [CBUUID]? {
-        var UUIDs: [CBUUID]? = usesExplicitServiceUUIDs ? [deviceServiceUUID] : nil
+        let UUIDs: [CBUUID]? = usesExplicitServiceUUIDs ? [deviceServiceUUID] : nil
         return UUIDs
     }
     var receiveCharacteristicUUID: CBUUID { // receive from perspective of peripheral
@@ -41,86 +41,98 @@ class RemoteController: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate
     var delegate: RemoteControllerDelegate?
 
     func initialize() {
-        println("Initializing")
+        print("Initializing")
         centralManager = CBCentralManager(delegate: self, queue: nil)
     }
 
-    func centralManagerDidUpdateState(central: CBCentralManager) {
-        if (central.state == .PoweredOn && peripheral == nil) {
-            println("Starting scan for peripherals")
-            centralManager.scanForPeripheralsWithServices(self.deviceServiceUUIDs, options: nil)
+    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+        if (central.state == .poweredOn && peripheral == nil) {
+            print("Starting scan for peripherals")
+            centralManager.scanForPeripherals(withServices: self.deviceServiceUUIDs, options: nil)
         }
     }
 
-    func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!,
-        advertisementData: [NSObject : AnyObject]!, RSSI: NSNumber!) {
-            central.stopScan()
-            self.peripheral = peripheral;
-            peripheral?.delegate = self;
-            central.connectPeripheral(peripheral, options: nil)
+    func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
+        print("Discovered peripheral \(peripheral)")
+        central.stopScan()
+        self.peripheral = peripheral;
+        peripheral.delegate = self;
+        central.connect(peripheral, options: nil)
     }
 
-    func centralManager(central: CBCentralManager!, didConnectPeripheral peripheral: CBPeripheral!) {
-        println("Connected to \(peripheral)")
+    func centralManager(_ central: CBCentralManager, didFailToConnect peripheral: CBPeripheral, error: Error?) {
+        print("Failed to connect: \(String(describing: error))")
+    }
+
+    func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
+        print("Connected to \(peripheral)")
         peripheral.discoverServices(self.deviceServiceUUIDs);
     }
 
-    func centralManager(central: CBCentralManager!, didDisconnectPeripheral peripheral: CBPeripheral!, error: NSError!) {
-        println("Disconnected from \(peripheral)")
+    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+        print("Disconnected from \(peripheral)")
         if let actualError = error {
-            println(actualError.localizedDescription)
+            print(actualError.localizedDescription)
         }
     }
 
-    func peripheral(peripheral: CBPeripheral!, didDiscoverServices error: NSError!) {
-        for service: CBService in peripheral.services as! [CBService] {
-            println("Discovered service \(service)")
-            peripheral.discoverCharacteristics([self.transmitCharacteristicUUID, self.receiveCharacteristicUUID], forService: service)
+    func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
+        guard let services = peripheral.services else {
+            return
+        }
+
+        for service: CBService in services {
+            print("Discovered service \(service)")
+            peripheral.discoverCharacteristics([self.transmitCharacteristicUUID, self.receiveCharacteristicUUID], for: service)
         }
         if let actualError = error {
-            println(actualError.localizedDescription)
+            print(actualError.localizedDescription)
         }
     }
 
-    func peripheral(peripheral: CBPeripheral!, didDiscoverCharacteristicsForService service: CBService!, error: NSError!) {
-        for characteristic in service.characteristics as! [CBCharacteristic] {
-            println("Discovered characteristic \(characteristic) for service \(service)")
-            characteristics[characteristic.UUID] = characteristic
+    func peripheral(_ peripheral: CBPeripheral, didDiscoverCharacteristicsFor service: CBService, error: Error?) {
+        guard let localCharacteristics = service.characteristics else {
+            return
+        }
+
+        for characteristic in localCharacteristics {
+            print("Discovered characteristic \(characteristic) for service \(service)")
+            characteristics[characteristic.uuid] = characteristic
         }
 
         if let transmitCharacteristic = characteristics[self.transmitCharacteristicUUID] {
-            self.peripheral?.setNotifyValue(true, forCharacteristic: transmitCharacteristic)
-            self.delegate?.remoteControllerIsInitialized(self)
+            self.peripheral?.setNotifyValue(true, for: transmitCharacteristic)
+            self.delegate?.remoteControllerIsInitialized(remoteController: self)
         }
 
         if let actualError = error {
-            println(actualError.localizedDescription)
+            print(actualError.localizedDescription)
         }
     }
 
-    func peripheral(peripheral: CBPeripheral!, didUpdateValueForCharacteristic characteristic: CBCharacteristic!, error: NSError!) {
+    func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
         if error == nil {
             let packet = Packet(data: characteristic.data)
-            self.delegate?.remoteController(self, didReceivePacket: packet)
+            self.delegate?.remoteController(remoteController: self, didReceivePacket: packet)
         } else {
-            println(error)
+            print(error!)
         }
     }
 
     func read() {
-        self.peripheral?.readValueForCharacteristic(self.characteristics[self.transmitCharacteristicUUID])
+        self.peripheral?.readValue(for: self.characteristics[self.transmitCharacteristicUUID]!)
     }
 
-    func write(#data: NSData) {
-        if (peripheral?.state == .Connected) {
-            self.peripheral?.writeValue(data, forCharacteristic: self.characteristics[self.receiveCharacteristicUUID], type: .WithoutResponse)
+    func write(data: NSData) {
+        if (peripheral?.state == .connected) {
+            self.peripheral?.writeValue(data as Data, for: self.characteristics[self.receiveCharacteristicUUID]!, type: .withoutResponse)
         } else {
-            println("Refusing to write to a disconnected peripheral")
+            print("Refusing to write to a disconnected peripheral")
         }
     }
 
-    func write(#packet: Packet) {
-        println("Writing packet \(packet)")
+    func write(packet: Packet) {
+        print("Writing packet \(packet)")
         self.write(data: packet.data)
     }
 }

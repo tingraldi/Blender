@@ -9,8 +9,8 @@
 import CoreBluetooth
 
 extension CBCharacteristic {
-    var data: NSData! {
-        return self.value() // bug on OS X? We can't access value as a property.
+    var data: NSData {
+        return self.value! as NSData
     }
 }
 

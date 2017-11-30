@@ -23,17 +23,17 @@ extension ViewController: RemoteControllerDelegate {
         prepareForUse()
     }
     
-    func setButtonState(state: Bool) {
-        hornButton.enabled = state
-        lightButton.enabled = state
+    func setButtonState(_ state: Bool) {
+        hornButton.isEnabled = state
+        lightButton.isEnabled = state
     }
 
     func remoteController(remoteController: RemoteController, didReceivePacket packet: Packet) {
-        println("Received echo packet for command \(packet.commandString)")
+        print("Received echo packet for command \(packet.commandString)")
     }
 
     func remoteControllerIsInitialized(remoteController: RemoteController) {
-        println("Remote controller is initialized")
+        print("Remote controller is initialized")
         self.remoteController.write(packet: Packet(command: "S", values: nil))
         setButtonState(true)
     }

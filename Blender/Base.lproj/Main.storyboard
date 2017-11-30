@@ -1,8 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_0" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,78 +19,78 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxU-zl-Pos">
-                                <rect key="frame" x="39" y="28" width="44" height="44"/>
+                                <rect key="frame" x="43" y="8" width="44" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="44" id="IaB-LF-u4c"/>
                                     <constraint firstAttribute="height" constant="44" id="My7-gc-1BE"/>
                                 </constraints>
                                 <state key="normal" title="Horn">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="emitTone:" destination="vXZ-lx-hvc" eventType="touchDown" id="efF-QB-gzx"/>
-                                    <action selector="endTone:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="HW5-ki-Cr9"/>
-                                    <action selector="endTone:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="guf-C0-wgh"/>
+                                    <action selector="emitToneWithSender:" destination="vXZ-lx-hvc" eventType="touchDown" id="iMl-eK-Ri7"/>
+                                    <action selector="endToneWithSender:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="TXx-mK-qkv"/>
+                                    <action selector="endToneWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qPw-zi-2cy"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-255" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="CdK-gX-aUb" userLabel="Left Motor Slider">
-                                <rect key="frame" x="14" y="285" width="200" height="31"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="18" y="145" width="200" height="31"/>
+                                <color key="tintColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="EmV-tm-ZlE"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="sendLeftMotorCommand:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Ata-gR-DjK"/>
-                                    <action selector="stopLeftMotor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f25-Rh-hwM"/>
-                                    <action selector="stopLeftMotor:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="m6d-2K-g1y"/>
+                                    <action selector="sendLeftMotorCommandWithSender:" destination="vXZ-lx-hvc" eventType="valueChanged" id="lfa-K8-CWx"/>
+                                    <action selector="stopLeftMotorWithSender:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="gPI-5Z-ENO"/>
+                                    <action selector="stopLeftMotorWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="k8q-qM-6n3"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-255" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="EjP-YV-Xu0" userLabel="Right Motor Slider">
-                                <rect key="frame" x="386" y="285" width="200" height="31"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="350" y="145" width="200" height="31"/>
+                                <color key="tintColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="196" id="paT-G3-qcR"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="sendRightMotorCommand:" destination="vXZ-lx-hvc" eventType="valueChanged" id="e1g-wb-rhB"/>
-                                    <action selector="stopRightMotor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="M7y-Jq-5VS"/>
-                                    <action selector="stopRightMotor:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="hC2-kC-Lsy"/>
+                                    <action selector="sendRightMotorCommandWithSender:" destination="vXZ-lx-hvc" eventType="valueChanged" id="qyS-G6-Git"/>
+                                    <action selector="stopRightMotorWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7pi-6R-urd"/>
+                                    <action selector="stopRightMotorWithSender:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="mGF-vX-iyr"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co3-zL-rwV">
-                                <rect key="frame" x="517" y="28" width="44" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="BMb-WH-N0o"/>
-                                    <constraint firstAttribute="height" constant="44" id="Bcu-Ch-xmY"/>
-                                </constraints>
-                                <state key="normal" title="Light">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="lightOff:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="OSL-vJ-lsk"/>
-                                    <action selector="lightOff:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VFR-Ac-dyq"/>
-                                    <action selector="lightOn:" destination="vXZ-lx-hvc" eventType="touchDown" id="mOu-DX-hB6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCN-QW-QOI">
-                                <rect key="frame" x="260" y="536" width="53" height="44"/>
+                                <rect key="frame" x="244" y="256" width="53" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="F9G-PP-JSB"/>
                                     <constraint firstAttribute="width" constant="53" id="cxw-3r-Z69"/>
                                 </constraints>
                                 <state key="normal" title="Reset">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="reset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="bjo-9l-qHF"/>
+                                    <action selector="resetWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0KX-0N-CKu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co3-zL-rwV">
+                                <rect key="frame" x="481" y="8" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="BMb-WH-N0o"/>
+                                    <constraint firstAttribute="height" constant="44" id="Bcu-Ch-xmY"/>
+                                </constraints>
+                                <state key="normal" title="Light">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="lightOffWithSender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6Ry-s7-KZH"/>
+                                    <action selector="lightOffWithSender:" destination="vXZ-lx-hvc" eventType="touchDragExit" id="uJk-e0-aCq"/>
+                                    <action selector="lightOnSender:" destination="vXZ-lx-hvc" eventType="touchDown" id="8PS-hl-sOw"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="co3-zL-rwV" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="0mh-YZ-iA0"/>
                             <constraint firstItem="co3-zL-rwV" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" constant="-23" id="EoD-TZ-2BA"/>
