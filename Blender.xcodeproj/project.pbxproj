@@ -9,12 +9,10 @@
 /* Begin PBXBuildFile section */
 		E67050011B7CD46300AED899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050001B7CD46300AED899 /* AppDelegate.swift */; };
 		E67050051B7CD46300AED899 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67050041B7CD46300AED899 /* Images.xcassets */; };
-		E67050141B7CD46300AED899 /* BlenderXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050131B7CD46300AED899 /* BlenderXTests.swift */; };
 		E670501C1B7CD4B200AED899 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670501B1B7CD4B200AED899 /* ViewController.swift */; };
 		E670501E1B7CD4C800AED899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E670501D1B7CD4C800AED899 /* Main.storyboard */; };
 		E67050201B7CD50E00AED899 /* RemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E11D71B5AD21900539179 /* RemoteController.swift */; };
 		E67050211B7CD51100AED899 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E161D1B5D173A00208E65 /* Packet.swift */; };
-		E67050231B7CD5E800AED899 /* CBCharacteristic+BlenderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050221B7CD5E800AED899 /* CBCharacteristic+BlenderX.swift */; };
 		E67050251B7CD66600AED899 /* CBCharacteristic+Blender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050241B7CD66600AED899 /* CBCharacteristic+Blender.swift */; };
 		E670502A1B7CDF6500AED899 /* RedBearRemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050291B7CDF6500AED899 /* RedBearRemoteController.swift */; };
 		E670502B1B7CDF6500AED899 /* RedBearRemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050291B7CDF6500AED899 /* RedBearRemoteController.swift */; };
@@ -25,25 +23,28 @@
 		E68E11BD1B5AD03700539179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68E11BB1B5AD03700539179 /* Main.storyboard */; };
 		E68E11BF1B5AD03700539179 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E68E11BE1B5AD03700539179 /* Images.xcassets */; };
 		E68E11C21B5AD03700539179 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E68E11C01B5AD03700539179 /* LaunchScreen.xib */; };
-		E68E11CE1B5AD03700539179 /* BlenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E11CD1B5AD03700539179 /* BlenderTests.swift */; };
 		E68E11D81B5AD21900539179 /* RemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E11D71B5AD21900539179 /* RemoteController.swift */; };
+		E6918FD41FD0F4620098DF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6918FD31FD0F4620098DF88 /* AppDelegate.swift */; };
+		E6918FD61FD0F4620098DF88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6918FD51FD0F4620098DF88 /* ViewController.swift */; };
+		E6918FD81FD0F4620098DF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6918FD71FD0F4620098DF88 /* Assets.xcassets */; };
+		E6918FDB1FD0F4620098DF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6918FD91FD0F4620098DF88 /* Main.storyboard */; };
+		E6918FE21FD20E7B0098DF88 /* TemperatureSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6918FE11FD20E7B0098DF88 /* TemperatureSample.swift */; };
+		E6918FF21FD229E50098DF88 /* TemperatureSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6918FF11FD229E50098DF88 /* TemperatureSampleTests.swift */; };
+		E6918FF31FD26CE70098DF88 /* CBCharacteristic+Blender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050241B7CD66600AED899 /* CBCharacteristic+Blender.swift */; };
+		E6918FF41FD26CEC0098DF88 /* CBCharacteristic+Blender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050241B7CD66600AED899 /* CBCharacteristic+Blender.swift */; };
+		E6918FF51FD3A3790098DF88 /* RedBearRemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67050291B7CDF6500AED899 /* RedBearRemoteController.swift */; };
+		E6918FF61FD3A3960098DF88 /* RemoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68E11D71B5AD21900539179 /* RemoteController.swift */; };
+		E6918FF71FD3A39B0098DF88 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E161D1B5D173A00208E65 /* Packet.swift */; };
 		E69E161E1B5D173A00208E65 /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E69E161D1B5D173A00208E65 /* Packet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E670500E1B7CD46300AED899 /* PBXContainerItemProxy */ = {
+		E6918FEC1FD229B30098DF88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E68E11AA1B5AD03700539179 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E6704FFB1B7CD46300AED899;
-			remoteInfo = BlenderX;
-		};
-		E68E11C81B5AD03700539179 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E68E11AA1B5AD03700539179 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E68E11B11B5AD03700539179;
-			remoteInfo = Blender;
+			remoteGlobalIDString = E6918FD01FD0F4620098DF88;
+			remoteInfo = "Temperature Recorder";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,12 +53,10 @@
 		E6704FFF1B7CD46300AED899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E67050001B7CD46300AED899 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E67050041B7CD46300AED899 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		E670500D1B7CD46300AED899 /* BlenderXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlenderXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67050121B7CD46300AED899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E67050131B7CD46300AED899 /* BlenderXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlenderXTests.swift; sourceTree = "<group>"; };
 		E670501B1B7CD4B200AED899 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E670501D1B7CD4C800AED899 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		E67050221B7CD5E800AED899 /* CBCharacteristic+BlenderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBCharacteristic+BlenderX.swift"; sourceTree = "<group>"; };
 		E67050241B7CD66600AED899 /* CBCharacteristic+Blender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CBCharacteristic+Blender.swift"; sourceTree = "<group>"; };
 		E67050291B7CDF6500AED899 /* RedBearRemoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedBearRemoteController.swift; sourceTree = "<group>"; };
 		E670502E1B7CED4900AED899 /* ViewController+Blender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Blender.swift"; sourceTree = "<group>"; };
@@ -68,22 +67,26 @@
 		E68E11BC1B5AD03700539179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E68E11BE1B5AD03700539179 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E68E11C11B5AD03700539179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		E68E11C71B5AD03700539179 /* BlenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlenderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E68E11CC1B5AD03700539179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E68E11CD1B5AD03700539179 /* BlenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlenderTests.swift; sourceTree = "<group>"; };
 		E68E11D71B5AD21900539179 /* RemoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteController.swift; sourceTree = "<group>"; };
+		E6918FD11FD0F4620098DF88 /* Temperature Recorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Temperature Recorder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6918FD31FD0F4620098DF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6918FD51FD0F4620098DF88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E6918FD71FD0F4620098DF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6918FDA1FD0F4620098DF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6918FDC1FD0F4620098DF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6918FDD1FD0F4620098DF88 /* Temperature_Recorder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Temperature_Recorder.entitlements; sourceTree = "<group>"; };
+		E6918FE11FD20E7B0098DF88 /* TemperatureSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureSample.swift; sourceTree = "<group>"; };
+		E6918FE71FD229B30098DF88 /* Temperature Recorder Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Temperature Recorder Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6918FEB1FD229B30098DF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6918FF11FD229E50098DF88 /* TemperatureSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureSampleTests.swift; sourceTree = "<group>"; };
 		E69E161D1B5D173A00208E65 /* Packet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet.swift; sourceTree = "<group>"; };
+		E6B5F38A1FD3C1AE002AE437 /* Temperature Recorder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Temperature Recorder.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E6704FF91B7CD46300AED899 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E670500A1B7CD46300AED899 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -97,7 +100,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E68E11C41B5AD03700539179 /* Frameworks */ = {
+		E6918FCE1FD0F4620098DF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6918FE41FD229B30098DF88 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -112,7 +122,6 @@
 			children = (
 				E67050001B7CD46300AED899 /* AppDelegate.swift */,
 				E670501B1B7CD4B200AED899 /* ViewController.swift */,
-				E67050221B7CD5E800AED899 /* CBCharacteristic+BlenderX.swift */,
 				E670501D1B7CD4C800AED899 /* Main.storyboard */,
 				E67050041B7CD46300AED899 /* Images.xcassets */,
 				E6704FFE1B7CD46300AED899 /* Supporting Files */,
@@ -152,6 +161,7 @@
 				E67050291B7CDF6500AED899 /* RedBearRemoteController.swift */,
 				E69E161D1B5D173A00208E65 /* Packet.swift */,
 				E670502E1B7CED4900AED899 /* ViewController+Blender.swift */,
+				E67050241B7CD66600AED899 /* CBCharacteristic+Blender.swift */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -164,6 +174,8 @@
 				E68E11CA1B5AD03700539179 /* BlenderTests */,
 				E6704FFD1B7CD46300AED899 /* BlenderX */,
 				E67050101B7CD46300AED899 /* BlenderXTests */,
+				E6918FD21FD0F4620098DF88 /* Temperature Recorder */,
+				E6918FE81FD229B30098DF88 /* Temperature Recorder Tests */,
 				E68E11B31B5AD03700539179 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -172,9 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				E68E11B21B5AD03700539179 /* Blender.app */,
-				E68E11C71B5AD03700539179 /* BlenderTests.xctest */,
 				E6704FFC1B7CD46300AED899 /* BlenderX.app */,
-				E670500D1B7CD46300AED899 /* BlenderXTests.xctest */,
+				E6918FD11FD0F4620098DF88 /* Temperature Recorder.app */,
+				E6918FE71FD229B30098DF88 /* Temperature Recorder Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -184,7 +196,6 @@
 			children = (
 				E68E11B71B5AD03700539179 /* AppDelegate.swift */,
 				E68E11B91B5AD03700539179 /* ViewController.swift */,
-				E67050241B7CD66600AED899 /* CBCharacteristic+Blender.swift */,
 				E68E11BB1B5AD03700539179 /* Main.storyboard */,
 				E68E11BE1B5AD03700539179 /* Images.xcassets */,
 				E68E11C01B5AD03700539179 /* LaunchScreen.xib */,
@@ -218,6 +229,30 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E6918FD21FD0F4620098DF88 /* Temperature Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				E6B5F38A1FD3C1AE002AE437 /* Temperature Recorder.entitlements */,
+				E6918FD31FD0F4620098DF88 /* AppDelegate.swift */,
+				E6918FD51FD0F4620098DF88 /* ViewController.swift */,
+				E6918FE11FD20E7B0098DF88 /* TemperatureSample.swift */,
+				E6918FD71FD0F4620098DF88 /* Assets.xcassets */,
+				E6918FD91FD0F4620098DF88 /* Main.storyboard */,
+				E6918FDC1FD0F4620098DF88 /* Info.plist */,
+				E6918FDD1FD0F4620098DF88 /* Temperature_Recorder.entitlements */,
+			);
+			path = "Temperature Recorder";
+			sourceTree = "<group>";
+		};
+		E6918FE81FD229B30098DF88 /* Temperature Recorder Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E6918FEB1FD229B30098DF88 /* Info.plist */,
+				E6918FF11FD229E50098DF88 /* TemperatureSampleTests.swift */,
+			);
+			path = "Temperature Recorder Tests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,24 +273,6 @@
 			productReference = E6704FFC1B7CD46300AED899 /* BlenderX.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E670500C1B7CD46300AED899 /* BlenderXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E670501A1B7CD46300AED899 /* Build configuration list for PBXNativeTarget "BlenderXTests" */;
-			buildPhases = (
-				E67050091B7CD46300AED899 /* Sources */,
-				E670500A1B7CD46300AED899 /* Frameworks */,
-				E670500B1B7CD46300AED899 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E670500F1B7CD46300AED899 /* PBXTargetDependency */,
-			);
-			name = BlenderXTests;
-			productName = BlenderXTests;
-			productReference = E670500D1B7CD46300AED899 /* BlenderXTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		E68E11B11B5AD03700539179 /* Blender */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E68E11D11B5AD03700539179 /* Build configuration list for PBXNativeTarget "Blender" */;
@@ -273,22 +290,39 @@
 			productReference = E68E11B21B5AD03700539179 /* Blender.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E68E11C61B5AD03700539179 /* BlenderTests */ = {
+		E6918FD01FD0F4620098DF88 /* Temperature Recorder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E68E11D41B5AD03700539179 /* Build configuration list for PBXNativeTarget "BlenderTests" */;
+			buildConfigurationList = E6918FDE1FD0F4620098DF88 /* Build configuration list for PBXNativeTarget "Temperature Recorder" */;
 			buildPhases = (
-				E68E11C31B5AD03700539179 /* Sources */,
-				E68E11C41B5AD03700539179 /* Frameworks */,
-				E68E11C51B5AD03700539179 /* Resources */,
+				E6918FCD1FD0F4620098DF88 /* Sources */,
+				E6918FCE1FD0F4620098DF88 /* Frameworks */,
+				E6918FCF1FD0F4620098DF88 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E68E11C91B5AD03700539179 /* PBXTargetDependency */,
 			);
-			name = BlenderTests;
-			productName = BlenderTests;
-			productReference = E68E11C71B5AD03700539179 /* BlenderTests.xctest */;
+			name = "Temperature Recorder";
+			productName = "Temperature Recorder";
+			productReference = E6918FD11FD0F4620098DF88 /* Temperature Recorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6918FE61FD229B30098DF88 /* Temperature Recorder Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6918FEE1FD229B30098DF88 /* Build configuration list for PBXNativeTarget "Temperature Recorder Tests" */;
+			buildPhases = (
+				E6918FE31FD229B30098DF88 /* Sources */,
+				E6918FE41FD229B30098DF88 /* Frameworks */,
+				E6918FE51FD229B30098DF88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6918FED1FD229B30098DF88 /* PBXTargetDependency */,
+			);
+			name = "Temperature Recorder Tests";
+			productName = "Temperature Recorder Tests";
+			productReference = E6918FE71FD229B30098DF88 /* Temperature Recorder Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -297,7 +331,7 @@
 		E68E11AA1B5AD03700539179 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0910;
 				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Majesty Software";
 				TargetAttributes = {
@@ -306,17 +340,20 @@
 						DevelopmentTeam = DSP92R77D9;
 						ProvisioningStyle = Automatic;
 					};
-					E670500C1B7CD46300AED899 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = E6704FFB1B7CD46300AED899;
-					};
 					E68E11B11B5AD03700539179 = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = DSP92R77D9;
 					};
-					E68E11C61B5AD03700539179 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = E68E11B11B5AD03700539179;
+					E6918FD01FD0F4620098DF88 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = DSP92R77D9;
+						ProvisioningStyle = Automatic;
+					};
+					E6918FE61FD229B30098DF88 = {
+						CreatedOnToolsVersion = 9.1;
+						DevelopmentTeam = DSP92R77D9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E6918FD01FD0F4620098DF88;
 					};
 				};
 			};
@@ -334,9 +371,9 @@
 			projectRoot = "";
 			targets = (
 				E68E11B11B5AD03700539179 /* Blender */,
-				E68E11C61B5AD03700539179 /* BlenderTests */,
 				E6704FFB1B7CD46300AED899 /* BlenderX */,
-				E670500C1B7CD46300AED899 /* BlenderXTests */,
+				E6918FD01FD0F4620098DF88 /* Temperature Recorder */,
+				E6918FE61FD229B30098DF88 /* Temperature Recorder Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -351,13 +388,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E670500B1B7CD46300AED899 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E68E11B01B5AD03700539179 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -368,7 +398,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E68E11C51B5AD03700539179 /* Resources */ = {
+		E6918FCF1FD0F4620098DF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6918FD81FD0F4620098DF88 /* Assets.xcassets in Resources */,
+				E6918FDB1FD0F4620098DF88 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6918FE51FD229B30098DF88 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -385,18 +424,10 @@
 				E670501C1B7CD4B200AED899 /* ViewController.swift in Sources */,
 				E67050011B7CD46300AED899 /* AppDelegate.swift in Sources */,
 				E67050311B7CF13D00AED899 /* ViewController+Blender.swift in Sources */,
-				E67050231B7CD5E800AED899 /* CBCharacteristic+BlenderX.swift in Sources */,
 				E670502B1B7CDF6500AED899 /* RedBearRemoteController.swift in Sources */,
 				E67050201B7CD50E00AED899 /* RemoteController.swift in Sources */,
+				E6918FF31FD26CE70098DF88 /* CBCharacteristic+Blender.swift in Sources */,
 				E67050211B7CD51100AED899 /* Packet.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E67050091B7CD46300AED899 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E67050141B7CD46300AED899 /* BlenderXTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,26 +445,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E68E11C31B5AD03700539179 /* Sources */ = {
+		E6918FCD1FD0F4620098DF88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E68E11CE1B5AD03700539179 /* BlenderTests.swift in Sources */,
+				E6918FD61FD0F4620098DF88 /* ViewController.swift in Sources */,
+				E6918FE21FD20E7B0098DF88 /* TemperatureSample.swift in Sources */,
+				E6918FF41FD26CEC0098DF88 /* CBCharacteristic+Blender.swift in Sources */,
+				E6918FF51FD3A3790098DF88 /* RedBearRemoteController.swift in Sources */,
+				E6918FF71FD3A39B0098DF88 /* Packet.swift in Sources */,
+				E6918FD41FD0F4620098DF88 /* AppDelegate.swift in Sources */,
+				E6918FF61FD3A3960098DF88 /* RemoteController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6918FE31FD229B30098DF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6918FF21FD229E50098DF88 /* TemperatureSampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E670500F1B7CD46300AED899 /* PBXTargetDependency */ = {
+		E6918FED1FD229B30098DF88 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E6704FFB1B7CD46300AED899 /* BlenderX */;
-			targetProxy = E670500E1B7CD46300AED899 /* PBXContainerItemProxy */;
-		};
-		E68E11C91B5AD03700539179 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E68E11B11B5AD03700539179 /* Blender */;
-			targetProxy = E68E11C81B5AD03700539179 /* PBXContainerItemProxy */;
+			target = E6918FD01FD0F4620098DF88 /* Temperature Recorder */;
+			targetProxy = E6918FEC1FD229B30098DF88 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -452,6 +492,14 @@
 				E68E11C11B5AD03700539179 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		E6918FD91FD0F4620098DF88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6918FDA1FD0F4620098DF88 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -495,49 +543,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		E67050171B7CD46300AED899 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BlenderXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.majestysoftware.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlenderX.app/Contents/MacOS/BlenderX";
-			};
-			name = Debug;
-		};
-		E67050181B7CD46300AED899 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BlenderXTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.majestysoftware.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlenderX.app/Contents/MacOS/BlenderX";
 			};
 			name = Release;
 		};
@@ -668,31 +673,107 @@
 			};
 			name = Release;
 		};
-		E68E11D51B5AD03700539179 /* Debug */ = {
+		E6918FDF1FD0F4620098DF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = BlenderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.majestysoftware.$(PRODUCT_NAME:rfc1034identifier)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Temperature Recorder/Temperature Recorder.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = DSP92R77D9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Temperature Recorder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.majestysoftware.Temperature-Recorder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blender.app/Blender";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		E68E11D61B5AD03700539179 /* Release */ = {
+		E6918FE01FD0F4620098DF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "Temperature Recorder/Temperature Recorder.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DSP92R77D9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Temperature Recorder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.majestysoftware.Temperature-Recorder";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		E6918FEF1FD229B30098DF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = BlenderTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.majestysoftware.$(PRODUCT_NAME:rfc1034identifier)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = DSP92R77D9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Temperature Recorder Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.majestysoftware.Temperature-Recorder-Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blender.app/Blender";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Temperature Recorder.app/Contents/MacOS/Temperature Recorder";
+			};
+			name = Debug;
+		};
+		E6918FF01FD229B30098DF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DSP92R77D9;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Temperature Recorder Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.majestysoftware.Temperature-Recorder-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Temperature Recorder.app/Contents/MacOS/Temperature Recorder";
 			};
 			name = Release;
 		};
@@ -704,15 +785,6 @@
 			buildConfigurations = (
 				E67050151B7CD46300AED899 /* Debug */,
 				E67050161B7CD46300AED899 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E670501A1B7CD46300AED899 /* Build configuration list for PBXNativeTarget "BlenderXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E67050171B7CD46300AED899 /* Debug */,
-				E67050181B7CD46300AED899 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -735,11 +807,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E68E11D41B5AD03700539179 /* Build configuration list for PBXNativeTarget "BlenderTests" */ = {
+		E6918FDE1FD0F4620098DF88 /* Build configuration list for PBXNativeTarget "Temperature Recorder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E68E11D51B5AD03700539179 /* Debug */,
-				E68E11D61B5AD03700539179 /* Release */,
+				E6918FDF1FD0F4620098DF88 /* Debug */,
+				E6918FE01FD0F4620098DF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6918FEE1FD229B30098DF88 /* Build configuration list for PBXNativeTarget "Temperature Recorder Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6918FEF1FD229B30098DF88 /* Debug */,
+				E6918FF01FD229B30098DF88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
