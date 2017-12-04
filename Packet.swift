@@ -53,6 +53,6 @@ struct Packet {
     }
 
     var description: String {
-        return "\(commandString): \(String(describing: values))"
+        return "\(String(commandString)): \(String(describing: values))"
     }
 }
