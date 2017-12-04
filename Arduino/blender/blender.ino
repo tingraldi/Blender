@@ -15,6 +15,8 @@ const int LEDPin = 13;
 const byte FORWARD = 1;
 const byte REVERSE = 0;
 
+char NAME[] = "Tumbler";
+
 void setMotorSpeed(int pin, int value) {
   analogWrite(pin, value);
 }
@@ -84,7 +86,7 @@ void setup() {
   pinMode(piezoPin, OUTPUT);
   pinMode(LEDPin, OUTPUT);
 
-  ble_set_name("Tumbler");
+  ble_set_name(NAME);
   ble_begin();
   allStop();
 } 
